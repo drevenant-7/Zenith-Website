@@ -2,23 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Changelog - Zenith Launcher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <span>Zenith Launcher</span>
+            <span>🔴 Zenith Launcher</span>
         </div>
-        <nav>
+        
+        <!-- Desktop/Landscape Nav -->
+        <nav class="desktop-nav">
             <a href="index.html">Home</a>
             <a href="wiki.html">Wiki</a>
             <a href="about.html">About</a>
             <a href="changelog.html" class="active">Changelog</a>
             <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS" target="_blank">GitHub</a>
         </nav>
+        
+        <!-- Portrait Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
+    
+    <!-- Portrait Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <div class="mobile-nav">
+            <a href="index.html">🏠 Home</a>
+            <a href="wiki.html">📖 Wiki</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="changelog.html" class="active">📋 Changelog</a>
+            <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS" target="_blank">💻 GitHub</a>
+        </div>
+    </div>
 
     <main>
         <section class="page-header">
@@ -138,5 +155,11 @@
         <p>GPLv3 Licensed | Copyright © 2025, drevenant-7</p>
         <p>Based on <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS">PojavLauncher iOS</a> and zhuowei's Boardwalk</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+    </script>
 </body>
 </html>

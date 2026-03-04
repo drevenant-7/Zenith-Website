@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki - Zenith Launcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Zenith Launcher</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wiki.html" class="active">Wiki</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <main class="wiki-layout">
+        <aside class="wiki-sidebar">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#trollstore">TrollStore Method</a></li>
+                <li><a href="#altstore">AltStore/SideStore</a></li>
+                <li><a href="#sign-in">Signing In</a></li>
+            </ul>
+            <h3>JIT & Performance</h3>
+            <ul>
+                <li><a href="#jit">Enabling JIT</a></li>
+                <li><a href="#jit-methods">JIT Methods</a></li>
+            </ul>
+            <h3>Configuration</h3>
+            <ul>
+                <li><a href="#controls">Custom Controls</a></li>
+                <li><a href="#mods">Installing Mods</a></li>
+            </ul>
+        </aside>
+
+        <article class="wiki-content">
+            <h1>Welcome to the Zenith Launcher Wiki</h1>
+            <p class="intro">Get started by <a href="#installation">installing Zenith Launcher</a>! Got questions? Check our FAQ below.</p>
+
+            <section id="installation" class="wiki-section">
+                <h2>🔧 Installation</h2>
+                <p>Choose the installation method that works best for your device:</p>
+
+                <div id="trollstore" class="method-card recommended">
+                    <div class="method-header">
+                        <h3>🎯 Method 1: TrollStore (Recommended)</h3>
+                        <span class="badge best">Best Performance</span>
+                    </div>
+                    <p>TrollStore provides the best experience with automatic JIT and no re-signing required.</p>
+                    
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>iOS 14.0 - 17.0 (for TrollStore 1)</li>
+                        <li>iOS 15.0 - 17.0 (for TrollStore 2)</li>
+                        <li>A computer for initial setup</li>
+                    </ul>
+
+                    <h4>Steps:</h4>
+                    <ol>
+                        <li>Install TrollStore on your device following the <a href="https://github.com/opa334/TrollStore" target="_blank">official guide</a></li>
+                        <li>Download the latest Zenith Launcher IPA from <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS/releases" target="_blank">GitHub Releases</a></li>
+                        <li>Open the IPA with TrollStore</li>
+                        <li>Launch Zenith Launcher - JIT will be enabled automatically!</li>
+                    </ol>
+                </div>
+
+                <div id="altstore" class="method-card">
+                    <div class="method-header">
+                        <h3>📦 Method 2: AltStore / SideStore</h3>
+                        <span class="badge free">Free</span>
+                    </div>
+                    <p>Free alternative that requires re-signing every 7 days.</p>
+                    
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Apple ID (free or developer)</li>
+                        <li>Computer with AltServer installed</li>
+                    </ul>
+
+                    <h4>Steps:</h4>
+                    <ol>
+                        <li>Install <a href="https://altstore.io" target="_blank">AltStore</a> on your device</li>
+                        <li>Download the Zenith Launcher IPA</li>
+                        <li>Open in AltStore and install</li>
+                        <li>Refresh every 7 days to keep it working</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="jit" class="wiki-section">
+                <h2>⚡ Enabling JIT</h2>
+                <p>Just-In-Time (JIT) compilation is required for optimal performance. Here's how to enable it:</p>
+
+                <div id="jit-methods" class="jit-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>External Device</th>
+                                <th>Wi-Fi Required</th>
+                                <th>Auto-Enabled</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight">
+                                <td><strong>TrollStore</strong></td>
+                                <td>❌ No</td>
+                                <td>❌ No</td>
+                                <td>✅ Yes</td>
+                            </tr>
+                            <tr>
+                                <td>JitStreamer</td>
+                                <td>❌ No</td>
+                                <td>✅ Yes</td>
+                                <td>✅ Yes</td>
+                            </tr>
+                            <tr>
+                                <td>SideJIT</td>
+                                <td>✅ Yes</td>
+                                <td>❌ No</td>
+                                <td>❌ Manual</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="note-box">
+                    <strong>iOS 17.x - 18.x:</strong> A computer with Python 3.11+ and pymobiledevice3 is required. See <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS/wiki/JIT-Enabling-Guides" target="_blank">JIT Documentation</a> for details.
+                </div>
+            </section>
+
+            <section id="sign-in" class="wiki-section">
+                <h2>🔑 Signing In</h2>
+                <p>Zenith Launcher supports multiple account types:</p>
+                
+                <div class="signin-options">
+                    <div class="signin-card">
+                        <h4>Microsoft Account</h4>
+                        <p>Full access to all Minecraft features. Requires valid Minecraft: Java Edition purchase.</p>
+                    </div>
+                    <div class="signin-card">
+                        <h4>Demo Mode</h4>
+                        <p>Try Minecraft for free with limited features and time restrictions.</p>
+                    </div>
+                    <div class="signin-card">
+                        <h4>Internal Account</h4>
+                        <p>For testing purposes. We recommend purchasing the game to support Mojang.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="controls" class="wiki-section">
+                <h2>🎮 Custom Controls</h2>
+                <p>Zenith Launcher features a fully customizable control system:</p>
+                <ul>
+                    <li><strong>On-screen buttons</strong> - Resize, reposition, and customize every button</li>
+                    <li><strong>Joystick</strong> - Adjustable size and position</li>
+                    <li><strong>Gesture controls</strong> - Swipe, tap, and multi-touch support</li>
+                    <li><strong>Game controllers</strong> - Full MFi and Xbox/PS controller support</li>
+                    <li><strong>Keyboard & Mouse</strong> - Full support with customizable keybindings</li>
+                </ul>
+            </section>
+
+            <section id="mods" class="wiki-section">
+                <h2>🧩 Installing Mods</h2>
+                <p>Zenith Launcher supports all major mod loaders:</p>
+                
+                <div class="mod-loaders">
+                    <div class="loader-card">
+                        <h4>Forge</h4>
+                        <p>Most popular mod loader with extensive mod library</p>
+                    </div>
+                    <div class="loader-card">
+                        <h4>Fabric</h4>
+                        <p>Lightweight and modern, great for performance mods</p>
+                    </div>
+                    <div class="loader-card">
+                        <h4>OptiFine</h4>
+                        <p>Performance optimization and shader support</p>
+                    </div>
+                    <div class="loader-card">
+                        <h4>Quilt</h4>
+                        <p>Community-driven Fabric alternative</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>GPLv3 Licensed | Copyright © 2025, drevenant-7</p>
+        <p>Based on <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS">PojavLauncher iOS</a> and zhuowei's Boardwalk</p>
+    </footer>
+</body>
+</html>

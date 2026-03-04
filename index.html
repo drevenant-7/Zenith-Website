@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Zenith Launcher - Minecraft Java Edition for iOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>🔴 Zenith Launcher</span>
+        </div>
+        
+        <!-- Desktop/Landscape Nav -->
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="wiki.html">Wiki</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS" target="_blank">GitHub</a>
+        </nav>
+        
+        <!-- Portrait Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    
+    <!-- Portrait Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <div class="mobile-nav">
+            <a href="index.html" class="active">🏠 Home</a>
+            <a href="wiki.html">📖 Wiki</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="changelog.html">📋 Changelog</a>
+            <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS" target="_blank">💻 GitHub</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h1>Zenith Launcher</h1>
+            <p class="tagline">Minecraft: Java Edition for iOS & iPadOS</p>
+            <p class="description">A powerful, flexible launcher that brings the full Minecraft Java experience to your Apple devices.</p>
+            <div class="buttons">
+                <a href="wiki.html" class="btn btn-primary">Get Started →</a>
+                <a href="https://github.com/drevenant-7/Zenith-Launcher-iOS/releases" class="btn btn-secondary">Download</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Full Minecraft Support</h3>
+                    <p>Play any version from early beta to latest snapshots with full mod support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>JIT Compilation</h3>
+                    <p>Optimized performance with Just-In-Time compilation support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Mod Support</h3>
+                    <p>Forge, Fabric, OptiFine & Quilt mod loaders fully supported.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Controller Support</h3>
+                    <p>Full keyboard, mouse & game controller support for the best experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Jailbreak Optional</h3>
+                    <p>Works on both jailbroken and non-jailbroken devices via TrollStore.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Custom Controls</h3>
+                    <p>Fully customizable on-screen controls tailored to your play style.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="requirements">
+            <h2>Requirements</h2>
+            <div class="req-grid">
+                <div class="req-card">
+                    <h3>📱 Minimum</h3>
+                    <ul>
+                        <li>iPhone 6s or later</li>
+                        <li>iPad (5th gen) or later</li>
+                        <li>iOS 14.0+</li>
+                    </ul>
+                </div>
+                <div class="req-card recommended">
+                    <h3>⭐ Recommended</h3>
+                    <ul>
+                        <li>iPhone XS or later</li>
+                        <li>iPad Air (4th gen) or later</li>
+                        <li>iPad Pro (any model)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="installation">
+            <h2>Quick Install</h2>
+            <div class="install-methods">
+                <div class="install-card">
+                    <h3>🎯 TrollStore (Recommended)</h3>
+                    <p>Best performance with automatic JIT. No computer required after initial setup.</p>
+                    <a href="wiki.html#trollstore" class="btn-small">Learn More</a>
+                </div>
+                <div class="install-card">
+                    <h3>📦 AltStore / SideStore</h3>
+                    <p>Free alternative with 7-day re-signing. Requires periodic refresh.</p>
+                    <a href="wiki.html#altstore" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <h2>Latest Update</h2>
+            <div class="news-preview">
+                <div class="version-badge">v1.3.4</div>
+                <h3>MobileGlues Update</h3>
+                <p>Updated renderer with significant size reduction and stability improvements.</p>
+                <a href="changelog.html" class="btn-small">View Full Changelog</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>GPLv3 Licensed | Copyright © 2025, drevenant-7</p>
+        <p>Based on <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS">PojavLauncher iOS</a> and zhuowei's Boardwalk</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
